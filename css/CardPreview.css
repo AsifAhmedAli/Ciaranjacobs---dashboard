@@ -1,0 +1,18 @@
+﻿div.CardPreview{position:relative;overflow:auto;height:200px;color:#eee;}
+.CardPreview img{position:absolute;display:block;z-index:0;}
+.CardPreview label
+{
+	text-shadow:2px 2px 2px #000;
+	color:#eee;
+}
+.CardPreview .Line1{
+z-index:1;
+position:absolute;
+  top:78px;
+  font-size:21px;
+left:30px;
+}
+.CardPreview .Line2{z-index:1;position:absolute;top:104px;font-size:11px;left:30px;}
+.CardPreview .Line3{z-index:1;position:absolute;top:119px;font-size:11px;left:30px;}
+.CardPreview .Line4{z-index:1;position:absolute;top:134px;font-size:11px;left:30px;}
+.CardPreview .Line5{z-index:1;position:absolute;top:146px;font-size:11px;left:30px;}

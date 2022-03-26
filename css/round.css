@@ -1,0 +1,145 @@
+﻿.jquery-message {
+    font: normal 20px / 50px Helvetica, Arial, Sans-Serif;
+    letter-spacing: -1px;
+    position: absolute;
+    /* top: 250px; */
+	bottom: 50px;
+    left: 25%;
+    width: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    z-index: 100000;
+}
+
+.jquery-message .round {
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+    font-size: 1px;
+    height: 2px;
+}
+
+.jquery-message p {
+    padding: .3em;
+    display: inline;
+}
+
+.jquery-message a {
+    display: none;
+}
+
+div.rounded {
+    clear:both;
+    max-width:2400px;
+}
+
+div.rounded div.top-outer {
+    background:url(../images/grd/tl.gif) no-repeat left bottom;
+    padding:0px;
+    width:100%;
+}
+
+div.rounded div.top-outer div.top-inner {
+    background:url(../images/grd/tr.gif) no-repeat right bottom;
+    margin-left:9px;
+    
+}
+
+div.rounded div.top-outer div.top-inner div.top {
+    background:url(../images/grd/tm.gif) repeat;
+    height:23px;
+    margin-right:9px;
+    font-size:.01em;
+}
+
+div.rounded div.mid-outer {
+    background:url(../images/grd/l.gif) left repeat-y;
+    clear:both;
+    width:100%;
+}
+
+div.rounded div.mid-outer div.mid-inner {
+    background:url(../images/grd/r.gif) right repeat-y;
+    margin-left:9px;    
+}
+
+
+
+div.rounded div.mid-outer div.mid-inner div.midfrm {
+    background-image:url(../images/formfieldspanel.png);
+    margin-right:9px;
+}
+
+div.rounded div.mid-outer div.mid-inner div.mid {
+	background-color:#ffffff;
+    margin-right:9px;
+}
+
+div.rounded div.bottom-outer {
+    background:url(../images/grd/bl.gif) no-repeat left top;
+    clear:both;
+    padding:0px;
+    width:100%;
+}
+
+div.rounded div.bottom-outer div.bottom-inner {
+    background:url(../images/grd/br.gif) no-repeat right top;
+    margin-left:8px;
+}
+
+div.rounded div.bottom-outer div.bottom-inner div.bottom {
+    background:url(../images/grd/bm.gif) repeat;
+    height:9px;
+    margin-right:8px;
+    font-size:.01em;
+}
+
+div.rounded div.mid-outer div.mid-inner div.midform {
+	background-image:url(../images/formfieldspanel.png);
+    margin-right:9px;
+}
+
+
+div.toolbarstripc { text-align:center; color:White;}
+div.toolbarstripc a{background-repeat:no-repeat;background-position:left center;border:1px solid white; background-color:transparent;color:White;padding:0px 21px 0px 21px;text-decoration:none; font-weight:bold;}
+div.toolbarstripc a.selectallbutton{background-image:url(../images/select_all.png);}
+div.toolbarstripc a.Icon select none{background-image:url(../images/select_none.png);}
+div.toolbarstripc a.changestatusbutton{background-image:url(../images/execute.png);}
+div.toolbarstripc a.reissuebutton{background-image:url(../images/reissue_card.png);}
+div.toolbarstripc a.expirebutton{background-image:url(../images/donot_reissue_card.png);}
+div.toolbarstripc a.pinreprintbutton{background-image:url(../images/reprint_pin.png);}
+div.toolbarstripc a.pinreprintbuttondisabled{background-image:url(../images/reprint_pin_disabled.png); color:#999999;}
+div.toolbarstripc a.copycardbutton{background-image:url(../images/copycard.png);}
+div.toolbarstripc a.replacecardbutton{background-image:url(../images/replacecard.png);}
+div.toolbarstripc a.addinsurancebutton{background-image:url(../images/add_insurance.png);}
+div.toolbarstripc a.renewinsurancebutton{background-image:url(../images/renew_insurance.png);}
+div.toolbarstripc a.moveinsurancebutton{background-image:url(../images/move_insurance.png);}
+div.toolbarstripc a.cancelinsurancebutton{background-image:url(../images/cancel_insurance.png);}
+div.toolbarstripc a.changestatusbutton{background-image:url(../images/execute.png);}
+div.toolbarstripc a.exportsummarybutton{background-image:url(../images/export_summary.png);}
+div.toolbarstripc a.exportdetailbutton{background-image:url(../images/export_detail.png);}
+div.toolbarstripc a.copycardbutton{background-image:url(../images/copycard.png);}
+div.toolbarstripc a.replacecardbutton{background-image:url(../images/replacecard.png);}
+div.toolbarstripc a.newbutton{background-image:url(../images/new.png);}
+div.toolbarstripc a.cancelbutton{background-image:url(../images/cancel.png);}
+div.toolbarstripc a.supersedebutton{background-image:url(../images/supersede.png);}
+div.toolbarstripc a.deletebutton{background-image:url(../images/delete.png);}
+div.toolbarstripc a.reprocess{background-image:url(../images/reprocess.png);}
+div.toolbarstripc a.savebutton{background-image:url(../images/save.png);} 
+div.toolbarstripc a.confirmbutton{background-image:url(../images/execute.png);} 
+
+div.toolbarstripc a.billedbutton{background-image:url(../images/billed.png);}
+div.toolbarstripc a.billedwithcoinstackbutton{background-image:url(../images/billedwithcoinstack.png);}
+div.toolbarstripc a.billedfeesbutton{background-image:url(../images/billedfees.png);}
+div.toolbarstripc a.settledbutton{background-image:url(../images/settled.png);}
+div.toolbarstripc a.unsettledbutton{background-image:url(../images/unsettled.png);}
+div.toolbarstripc a.unbilledbutton{background-image:url(../images/unbilled.png);}
+div.toolbarstripc a.refreshbutton{background-image:url(../images/refresh16.png);}
+
+div.toolbarstripc div.toolbarseperatormiddle{display:inline;padding-left:5px;padding-right:2px;width:auto;}
+div.toolbarstripc div.toolbarseperatorright{display:inline;padding-right:2px;width:auto;}
+div.toolbarstripc div.toolbarseperatorleft{display:inline;padding-left:5px;width:auto;}
+
+div.frmmess { text-align: center; font-weight:bold;}

@@ -1,0 +1,40 @@
+﻿body {
+}
+
+.headertable {
+    width: 100%;
+}
+
+.headertr {
+    vertical-align: top;
+}
+
+.headertd {
+    width:5px;
+    text-align:left;
+}
+
+
+.bodytable {
+    border: 1px solid #FF9900;
+    width: 100%;
+}
+
+.bodytr {
+    vertical-align: top;
+}
+
+.bodytd {
+    padding: 10px;
+    width: 365px;
+}
+
+.hr {
+    margin-bottom:0; 
+    text-align:left;
+}
+
+h2 {
+    font-size: 130px;
+    line-height: 40px;
+}

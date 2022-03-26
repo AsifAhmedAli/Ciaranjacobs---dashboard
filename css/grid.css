@@ -1,0 +1,590 @@
+﻿/* The Actual Menu Options on the Sort */
+.SortContainer
+{
+    border-style:solid;    
+    border-width:1px;   
+    border-color: Gray ;     
+}
+
+.sortmenuItem tr{
+   /*background:#7795BD url(../images/toolbar.gif) repeat-x; */
+   background:#eee;
+   text-align:center;    
+   height: 25px;
+}
+
+.sortmenuItem tr a
+{
+    /*color: black;   
+    padding-left:8px !important;    
+    padding-right:8px !important;   
+    border-bottom: 0;
+    text-decoration:none;*/
+    padding:0 1em;
+	display:block;
+	white-space:nowrap;
+	line-height:24px;
+	color:#333;
+	text-decoration:none;
+}
+
+
+.sortmenuItem tr:hover 
+{ 
+    background:#7795BD url(../images/header.gif) repeat-x;
+}
+
+.sortmenuItem tr:hover a
+{ 
+    color:White;
+}
+
+/* Top Level Sort Menu (Label Element) */
+.gridhead .sortby .sortmenu A
+{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.gridhead
+{
+    width: 100%;
+    border: none;
+}
+.gridhead TD
+{
+    width: 33%;
+    vertical-align: top;
+}
+
+.alignfloatsort
+{
+    float:right;   
+}
+
+.grid
+{
+    font-family: Tahoma;
+    padding-top: 0px;
+}
+.grid H2
+{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.grid .mid
+{
+    padding: 3px 0px 0px 0px;
+}
+.grid .datatable
+{
+    width: 100%;
+    /*color: #666;*/
+}
+.grid .datatable TH
+{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding: 2px 4px;
+    color: #333333;
+    border-bottom: solid 2px #bbd9ee;
+    background-color: White;
+    text-align: left;
+}
+.grid .datatable TH A
+{
+    text-decoration: none;
+    padding-right: 18px;
+    color: #0066cc;
+}
+.grid .datatable TH.numbers
+{
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-indent:15px;
+}
+
+.dummycol
+{
+    padding-left: 10px;
+    width: 100%;
+}
+
+.invisibleCol
+{
+    display:none;
+}
+
+.grid .datatable TH.nik
+{
+    white-space:nowrap;
+    min-width:130px
+}
+
+.grid .datatable TH.text
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent:15px;
+}
+
+.grid .datatable TH.sortasc A
+{
+    background: url(../images/grd/asc.gif) right center no-repeat;
+}
+.grid .datatable TH.sortdesc A
+{
+    background: url(../images/grd/desc.gif) right center no-repeat;
+}
+.grid .datatable .row
+{
+    font-size: 11px;
+    padding: 6px 4px;
+    border-bottom: solid 1px #bbd9ee;
+    text-indent: 15px;
+}
+
+.grid .datatable .rowrd
+{
+    font-size: 11px;
+   
+    border-bottom: solid 1px #bbd9ee;
+ 
+}
+
+.grid .datatable tr.currentactive
+{
+    cursor: pointer;
+    color: #777;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 15px;
+}
+.grid .datatable tr.currentactivealternate
+{
+    color: #777;
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 15px;
+}
+
+.grid .datatable tr.invalidoperation
+{
+    cursor: pointer;
+    background-image: url('../images/error.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 15px;
+}
+.grid .datatable tr.invalidoperationalternaterow
+{
+    background-image: url('../images/error.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    text-indent: 15px;
+}
+
+
+.grid .datatable .row input[type="text"]
+{
+    border: none;
+    background-color: Transparent;
+}
+
+.grid .datatable .rowb input[type="text"]
+{
+    border: none;
+    background-color: Transparent;
+}
+
+.grid .datatable .row input[type="submit"]
+{
+    display: none;
+    background-color: Transparent;
+}
+
+
+
+.grid .datatable .row:hover
+{
+    background-color: #fffacd;
+    color: #000;
+}
+
+.grid .datatable .row:hover input[type="submit"]
+{
+    display: inherit;
+}
+
+.namevaluetable
+{
+    width: 100%;
+    vertical-align: top;
+}
+
+.grid .datatable .rowb
+{
+    font-size: 11px;
+    padding: 6px 4px;
+    border-bottom: solid 1px #bbd9ee;
+    background-color: #f0f6f9;
+    text-indent: 15px;
+}
+
+.grid .datatable .rowb .numbers
+{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    vertical-align: top;
+    text-indent: 15px;
+}
+.grid .datatable .row .numbers
+{
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    vertical-align: top;
+    text-indent: 15px;
+}
+
+
+.grid .datatable .rowb .text
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+    text-indent: 15px;
+}
+.grid .datatable .row .text
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+    text-indent: 15px;
+}
+
+.grid .datatable .rowrd .rdtext
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
+    vertical-align: top;
+    text-indent: 0px;
+    
+}
+
+.grid .datatable .rowb .rdtext
+{
+    text-align: left;
+    white-space: nowrap;
+   
+    vertical-align: top;
+}
+
+.grid .datatable .rowb textcanwrap
+{
+    text-align: left;
+    padding-left: 10px;
+    width: 300px;
+    padding-right: 10px;
+    text-indent: 15px;
+}
+.grid .datatable .row textcanwrap
+{
+    text-align: left;
+    padding-left: 10px;
+    width: 300px;
+    padding-right: 10px;
+    text-indent: 15px;
+}
+
+
+.grid .datatable .rowb input[type="submit"]
+{
+    display: none;
+}
+
+.grid .datatable .rowb:hover
+{
+    background-color: #fffacd;
+    color: #000;
+}
+
+.grid .datatable .rowb:hover input[type="submit"]
+{
+    display: inherit;
+}
+
+.grid .datatable .rowinactive
+{
+    font-size: 11px;
+    padding: 6px 4px;
+    border-bottom: solid 1px #bbd9ee;
+    background-color: #f6f6f6;
+    color: red;
+}
+
+.grid .datatable .rowinactive:hover
+{
+    background-color: #fffacd;
+    color: #000;
+}
+
+.grid .datatable .rowexpired input[type="text"]
+{
+    border: none;
+    background-color: Transparent;
+}
+
+.grid .datatable .rowexpired
+{
+    background-color: #fff;
+    border-bottom: solid 1px #bbd9ee;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.grid .datatable .rowexpired .text
+{
+    text-align: left;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+    text-indent: 15px;
+    text-decoration:line-through;
+}
+
+.grid .datatable .rowexpired textcanwrap
+{
+    text-align: left;
+    padding-left: 10px;
+    width: 300px;
+    padding-right: 10px;
+    text-indent: 15px;
+}
+
+.grid .datatable .row TD.first
+{
+    padding-left: 10px;
+    text-indent:15px;
+}
+.grid .datatable TH.first
+{
+    padding-left: 10px;
+    text-indent:15px;
+}
+.grid .datatable .row:hover .first
+{
+    background-repeat: no-repeat;
+    background-image: url(../images/grd/bullet.gif);
+}
+/* Data Pager Styles */
+.grid TR.pager-row TD
+{
+    border-top: solid 2px #bbd9ee;
+}
+.gridhead .pager
+{
+    font-family: arial,sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.gridhead .pager SPAN.command, .gridhead .pager SPAN.current, .gridhead .pager A.command, .gridhead TR.pager-row TD A
+{
+    color: white;
+    padding: 0px 5px;
+    text-decoration: none;
+    border: none;
+}
+.gridhead .pager A.command:hover, .gridhead TR.pager-row TD A:hover
+{
+    border: solid 2px #408BB6;
+    background-color: #59A5D1;
+    color: #fff;
+    padding: 0px 3px;
+    text-decoration: none;
+}
+.gridhead .pager SPAN.current, .gridhead TR.pager-row TD SPAN
+{
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 0px 6px;
+}
+.gridhead TR.pager-row TD
+{
+    border-top: none;
+    text-align: center;
+}
+.gridhead TR.pager-row TABLE
+{
+    height: 35px;
+    margin: 0 auto 0 auto;
+}
+
+.headeralign
+{
+    vertical-align: top;
+}
+.headerdetaillabel
+{
+    font-weight: bold;
+    white-space: nowrap;
+    padding-right: 30px;
+}
+.headerdetailcontrol
+{
+    white-space: nowrap;
+    padding-right: 90px;
+}
+
+.headertext
+{
+    padding: 0px 5px;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    white-space: nowrap;
+    text-indent: 15px;
+    font-weight:bold;
+    color:White;
+    text-decoration:none;
+}
+
+.headertext SPAN
+{
+    font-weight: bold;
+    color: white;
+}
+.headertext SPAN.gridhead
+{
+    font-weight: bold;
+    color: #3399ff;
+    text-indent: 15px;
+}
+
+
+span.errorIcon
+{
+    background:url(../Images/error.png) no-repeat center center;
+    width:20px;
+    height:16px;
+    display:inline-block;*zoom:1;*display:inline;
+    }
+
+.controlerror
+{
+    background-color:#FFBABA;
+}
+
+div.errortiphide{display:none;}
+div.errortipshow{background:#eb2900;
+                 border:1px #911a00 solid;
+                 color:#ffffff;
+                 font-size:8pt;
+                 margin-left:8px;
+                 margin-top:-4px;
+                 position:absolute;
+                 padding:3px 5px 5px 5px;
+                 width:224px;
+                 white-space:
+                 normal;z-index:1;
+                 }
+
+input.autoCheckNudge{margin-left:1px;}
+/* nudge hacks for grids that don't align the header properly - when we change to tabs this should go away */
+#ctl00_CPH_mv_Main_grdSummary_header input.autoCheckNudge{margin-left:0px;}
+#ctl00_CPH_mvCardInsurance_gvCardInsurance_header input.autoCheckNudge
+,#ctl00_CPH_mvCustomerStatus_grdSubAccountStatus_header input.autoCheckNudge
+,#ctl00_CPH_DeviceSearchMain_grdResults_header input.autoCheckNudge
+,#ctl00_CPH_grdCards_header input.autoCheckNudge
+,#ctl00_CPH_ucDeviceSearch_grdResults_header input.autoCheckNudge{margin-left:-8px;}
+#ctl00_CPH_grdResults_header input.autoCheckNudge
+,#ctl00_CPH_mvMain_grdExistingPages_header input.autoCheckNudge
+,#ctl00_CPH_mvMain_grdExistingReports_header input.autoCheckNudge
+,#ctl00_CPH_mvMain_grdExistingUsers_header  input.autoCheckNudge{margin-left:14px;}
+
+
+/* testing new UI overrides */
+.datatable{
+
+
+}
+.datatable thead th{
+background:#eee;
+text-align:left;
+font-weight:bold;
+border-bottom:solid 1px #aaa;
+}
+.datatable tr:nth-child(odd){
+background:rgba(222,239,255,1);
+}
+
+/* end overrides*/
+
+
+.GridContainer .datatable
+{
+    width: 100%;
+    /*color: #666;*/
+}
+.GridContainer .datatable TH
+{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    padding: 2px 4px;
+    color: #556;
+    border-bottom: solid 2px #bbd9ee;
+    background-color: White;
+    text-align: left;
+	background: #e9e9ce;
+	background: -moz-linear-gradient(top, #e9e9ce 1%, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e9e9ce), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(top, #e9e9ce 1%,#cccccc 100%);
+	background: -o-linear-gradient(top, #e9e9ce 1%,#cccccc 100%);
+	background: -ms-linear-gradient(top, #e9e9ce 1%,#cccccc 100%);
+	background: linear-gradient(top, #e9e9ce 1%,#cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9ce', endColorstr='#cccccc',GradientType=0 );
+	padding:0 10px;
+	line-height:1.6em;
+	border-bottom:solid 1px #AAA;
+}
+.GridContainer.datatable TH A
+{
+    text-decoration: none;
+    padding-right: 18px;
+    color: #0066cc;
+}
+.GridContainer.datatable TH.numbers
+{
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-indent:15px;
+}
+.GridContainer.datatable tr:nth-child(odd)
+{
+    background:green!important;
+}
+

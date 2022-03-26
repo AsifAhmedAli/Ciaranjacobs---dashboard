@@ -1,0 +1,942 @@
+body {
+	background-color: #343434;
+}
+
+#inner-page #right {
+	background-color: #f5f5f5;
+}
+
+#inner-page #right #PageHeader {
+	background-color: #343434;
+	height: 70px;
+}
+
+#inner-page #right #PageHeader div.side, #inner-page #right #PageHeader div.title {
+	border-style: none;
+	color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+#inner-page #right #PageHeader #mnuLanguages ul ul {
+	background: #ffffff;
+	border: 0;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+#inner-page #right #PageHeader #mnuLanguages ul ul a {
+	color: #da461a;
+}
+
+#inner-page #right #centre {
+	/*margin: 80px auto;*/
+	border: 0;
+	padding: 0;
+}
+
+#inner-page #right #centre #operations, #inner-page #right #centre div.InfoBar.FormPanel {
+	background-color: #ffffff;
+	border: 0;
+	border-bottom: 0;
+	margin: 0 !important;
+}
+
+#inner-page #right #centre #operations {
+	height: 77px;
+	padding: 20px;
+	margin: 0;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink span.dropdown, #inner-page #right #centre #operations .StartMenu .backlink img#BackLink {
+    width: 0;
+	height: 0;
+	padding: 12px;
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink span.dropdown {
+	background: url(epix_images/down-arrow.png) no-repeat left top;
+	margin-top: 10px;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink span.dropdown ul.history {
+	background: #f5f5f5;
+	box-shadow: none;
+	border: 0;
+	padding: 20px;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink span.dropdown ul.history li {
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink span.dropdown ul.history li:hover {
+	outline: 1px solid #ffffff;
+	background-color: #ffffff;
+}
+
+#mnuNavigation ul.level1 li a.level1 {
+	padding: 25px 0 0 0 !important;
+    margin: 0 10px;
+    color: #000000;
+    border: 0 !important;
+    background: url(epix_images/right-arrow.png) no-repeat center top;
+}
+
+#mnuNavigation ul.level1 li:hover {
+	background-color: transparent !important;
+}
+
+#mnuNavigation ul.level1 ul.level2 {
+	background: #f5f5f5;
+	box-shadow: none;
+	border: 0;
+	padding: 20px;
+}
+
+#mnuNavigation ul.level1 ul.level2 li {
+	cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+#mnuNavigation ul.level1 ul.level2 li:hover {
+	outline: 1px solid #ffffff;
+	background-color: #ffffff !important;
+}
+
+#inner-page #right #centre #operations .StartMenu .backlink img#BackLink {
+	background: url(epix_images/back-arrow.png) no-repeat left top;
+	margin-top: 7px;
+}
+
+#inner-page #right #centre #operations .StartMenu input#SearchMenu {
+	border: 0;
+	background-color: #f5f5f5;
+	color: #343434;
+	padding: 10px 20px;
+	width: 350px;
+}
+
+::-webkit-input-placeholder {
+   color: #343434;
+   font-family: "Montserrat", sans-serif;
+   font-size: 13px;
+}
+:-moz-placeholder {
+   color: #343434;
+   font-family: "Montserrat", sans-serif;
+   font-size: 13px;
+}
+::-moz-placeholder {
+   color: #343434;
+   font-family: "Montserrat", sans-serif;
+   font-size: 13px;
+}
+:-ms-input-placeholder {  
+   color: #343434;
+   font-family: "Montserrat", sans-serif;
+   font-size: 13px;
+}
+
+#inner-page #right #centre #operations .tb {
+	float: right;
+    padding-right:50px;
+}
+
+#inner-page #right #centre #operations .tb a:hover {
+	border: 0;
+	background-color: transparent;    
+}
+
+
+#inner-page #right #centre #operations .tb a.Icon {
+	padding: 25px 0 0 0 !important;
+    margin: 0 10px;
+    color: #000000;
+    border: 0 !important;
+}
+
+#inner-page #right #centre #CPH .tb a.Icon.new {
+    background: url(epix_images/new.png) no-repeat left top;
+    background-size: 14px 15px;    
+}
+
+#inner-page #right #centre #CPH .tb a:hover {
+	border: 0;
+	background-color: transparent;    
+}
+
+#inner-page #right #centre #operations .tb a.Icon.new {
+    background: url(epix_images/new.png) no-repeat center top;
+}
+
+#inner-page #right #centre #operations .tb a.Icon.save {
+	background: url(epix_images/save.png) no-repeat center top;
+}
+
+div[id*='ctl00_CPH_uploadForm'] ul li a.Icon.save {
+	background: url(epix_images/save.png) no-repeat center center;
+    width:27px;
+    height:27px;
+}
+
+#inner-page #right #centre #operations .tb a.Icon.delete {
+	background: url(epix_images/trash.png) no-repeat center top;
+}
+
+#inner-page #right #centre #operations .tb a.Icon.cancel {
+	background: url(epix_images/cancel.png) no-repeat center top;
+}
+
+#inner-page #right #centre #operations .tb a.Icon.reset {
+	background: url(epix_images/reset.png) no-repeat center top;
+}
+
+#inner-page #right #centre #operations .tb a.Icon.search {
+	background: url(epix_images/search.png) no-repeat center top;
+}
+
+#inner-page #right #centre div.InfoBar.FormPanel {
+	border-top: 20px solid #f5f5f5;
+	padding: 20px;
+}
+
+#inner-page #right #centre div.InfoBar.FormPanel .form .InfoBar ul li {
+	margin: 5px 0;
+}
+
+#inner-page #right #centre div.InfoBar.FormPanel .form .InfoBar ul li label {
+	color: #343434;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+img[alt*="Collapse"], img[alt*="Expand"] {
+	width:0;    
+	height: 0;
+	padding: 8px;
+    display: block;
+    margin-right: 10px;
+    /*margin-top: 10px;*/
+    cursor: pointer;
+    float: left;
+}
+img[alt*="Collapse"] {
+    background: url(epix_images/minus.png) no-repeat left top;
+}
+img[alt*="Expand"] {
+    background: url(epix_images/plus.png) no-repeat left top;
+}
+/*for all treeview*/
+ul li  div[id*='ctl00_CPH_mvMain_tv'] table tbody tr td {
+    vertical-align:middle;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+.Treeleafnode {
+    max-width: 0 !important;  
+    height: auto;
+}
+
+ul li  div[id*='ctl00_CPH_tv'] table tbody tr td {
+    vertical-align:middle;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+div[id*='ctl00_CPH_mvUsers_tv'] table tbody tr td {
+    vertical-align:middle;
+    padding-bottom:3px;
+    padding-top:3px;
+}
+
+ul li table tbody tr td a#ctl00_CPH_mvMain_tvServicest0 {
+	font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #da461a;
+    vertical-align:middle;
+    padding-bottom:4px;
+}
+
+ul li table tbody tr td a {
+	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #535353;
+}
+
+#divmain ul.TabContainer {
+	background-color: #f5f5f5;
+	margin: 0;
+	border-top: 20px solid #f5f5f5;
+}
+
+#divmain ul.TabContainer li, #divmain ul.TabContainer li.selected {
+	border-width: 0;
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+}
+
+#divmain ul.TabContainer li {
+	background-color: #e0dfdf !important;
+    padding-right:10px;
+    /*added*/
+    border-left: 3px solid #ffffff;
+}
+
+#divmain ul.TabContainer li.selected {
+	background-color: #ffffff !important;
+}
+
+#divmain ul.TabContainer li a {
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #343434;
+    padding: 10px 35px;
+}
+
+#divmain ul.TabContainer li.selected a {
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #da461a;
+    padding: 10px 35px;
+}
+
+#divmain div.TabView, #divmain div.Tabview.selected {
+	background: #ffffff;
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	/*border-bottom: 20px solid #f5f5f5;*/
+	margin: 0;
+}
+
+#divmain fieldset ul li {
+	margin: 10px 0;
+}
+
+#divmain fieldset ul li label {
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#divmain fieldset ul li select {
+	border: 0;
+	background-color: #f5f5f5;
+	padding: 7px;
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    /*min-height: 40px;*/
+}
+
+#divmain fieldset ul li input {
+	border: 0;
+	background: #f5f5f5;
+	padding: 7px;
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    /*min-height: 40px;*/
+}
+
+#divmain fieldset ul li input[type=checkbox],#divmain fieldset ul li input[type=radio] {
+	border: 0;
+	background: none !important;
+	padding: 7px;
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;   
+    min-height:13px;    
+}
+
+#divmain fieldset ul li span.Icon {
+	width: 0;
+	height: 0;
+	padding: 12px !important;
+    display: block;
+    cursor: pointer;
+    float: right;
+    margin-left: 15px;
+    margin-top: 5px;
+    background: url(epix_images/cancel.png) no-repeat left top;
+}
+
+#divmain fieldset ul li span.Icon:hover {
+	border: 0;
+	box-shadow: none;
+}
+
+#divmain .GridC .Wrapper {
+	height: 600px !important;
+}
+
+#divmain .GridC .pager {
+	background: #da461a;
+    background-image:url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding: 10px 0;
+    height: 85px;
+    border-top: 20px solid #f5f5f5;
+    border-bottom: 20px solid #f5f5f5;
+}
+div[id*='CopyErrorDialog'] textarea
+{
+   box-sizing:content-box;
+   max-width:550px;
+}
+
+#divmain div[id*='ImportPanel'] .GridC .pager {
+	background: #da461a;
+    background-image:url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding: 10px 0;
+    height: 65px;
+    /*border-top: 20px solid #f5f5f5;*/
+    border-bottom: 20px solid #f5f5f5;
+}
+
+span[id*='Answeroption'] .disabled
+{
+    background:none !important;
+}
+
+#divmain .pager {
+	background: #da461a;
+    background-image:url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding: 10px 0;
+    height: 65px;
+    /*border-top: 20px solid #f5f5f5;*/
+    border-bottom: 20px solid #f5f5f5;
+}
+
+#divmain .pagermenu {
+	background: #da461a;
+    background-image:url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding: 10px 0;
+    height: 65px;
+    /*border-top: 20px solid #f5f5f5;*/
+    border-bottom: 20px solid #f5f5f5;
+    vertical-align:top;   
+    margin-top:-65px;
+}
+
+a[class*='popout level1 sortmenu']
+{
+    color:white;
+}
+
+
+
+#divmain .GridC .ListHeader{
+    background: #da461a;
+     background-image: url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#divmain .GridC .ListHeader li span.Descending, .GridC .ListHeader li span.Ascending
+{
+    background-color:transparent;
+}
+
+#divmain .GridC table th {
+	background: #da461a;
+     background-image: url(../images/pattern.png);
+    border: 0;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}	
+
+#divmain .GridC select, #divmain textarea {
+	border: 0;
+	background-color: #f5f5f5;
+	padding: 2px;
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+}	
+
+#divmain textarea {
+	padding: 10px;
+}
+
+.textarealongdescription
+{      
+    height:270px;
+}
+
+.textareasupplier
+{      
+    height:180px;
+    width:600px;
+}
+
+.eventtextarea
+{   
+    height:70px;
+    width:600px;
+}
+
+.eventtextareadescription
+{ 
+    height:180px;  
+    width:600px;
+}
+
+#divmain .GridC table th span.sort {
+	background-color: #da461a !important;
+}
+
+#divmain .GridC table td span.PopInfo_Trigger {
+	width: 0;
+	height: 0;
+	padding: 12px !important;   
+    display: block;
+    cursor: pointer;
+    float: right;
+    margin-left: 15px;
+    /*margin-top: 5px;*/
+    background: url(epix_images/search.png) no-repeat left top;
+}
+
+div.GridC table td {
+	background: #e7e7e7;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+div.GridC table tr:nth-child(2n+1) {
+    background-color: #ffffff !important;
+}
+
+div.GridC table tr:nth-child(2n+1):hover {
+    background-color: #ffffff !important;
+}
+
+div.GridC table tr:nth-child(2n+1):hover td {
+    background-color: #ffffff !important;
+    color: #343434;
+}
+
+div.GridC table tr:nth-child(2n) {
+    background: #e7e7e7 !important;
+}
+
+div.GridC table tr:nth-child(2n):hover {
+    background: #e7e7e7 !important;
+}
+
+div.GridC table tr:nth-child(2n):hover td {
+    background: #e7e7e7 !important;
+    color: #343434;
+}
+
+div.GridC table tr:nth-child(2n+1) td, #divmain .GridC table tr:nth-child(2n) td {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+div.PopInfo {
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+}
+
+#divmain .GridC div.pager ul li.selected {
+    background: #f5f5f5;
+    border-radius: 5px;
+    border:0;
+    color:#d6531a;
+}
+
+ul[id*='EventNotes'] ul.notesList div.FormPanel{
+	background: #ffffff;
+}
+
+ul[id*='EventNotes'] ul.notesList div.FormPanel > fieldset {
+	padding: 5px 5px 5px 5px;
+}
+
+#CPH > div.FormPanel .Tree {
+	border-width: 0;
+	border-color: #ffffff;
+}
+
+#CPH > div.TabView > div.FormPanel {
+	/*border-top: 5px solid #FFFFFF;*/
+    margin: 0 !important;
+    border-bottom:10px solid #FFFFFF;
+}
+
+div[id*='UpdatePanel'] div.FormPanel {
+	/*border-top: 5px solid #FFFFFF;*/
+    border-bottom:10px solid #FFFFFF;
+    margin: 0 !important;
+}
+
+div[id*='UpdatePanel'] div.FormPanel div.Header {
+        background: #ffffff;
+	    padding: 10px 1em;
+	    border: 0;
+	    margin-bottom: 20px;
+    }
+
+div[id*='UpdatePanel'] div.FormPanel div.Header label {
+    color: #da461a;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+#CPH > div.FormPanel div.Header {
+	background: #ffffff;
+	padding: 10px 1em;
+	border: 0;
+	margin-bottom: 20px;
+}
+
+#CPH > div.TabView div.FormPanel div.Header {
+    background: #ffffff;
+    padding: 10px 1em;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+#CPH > div.TabView div.FormPanel div.Header label {
+    color: #da461a;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#CPH > div.FormPanel div.Header label {
+	color: #da461a;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#CPH > div.FormPanel .Tree {
+	border-width: 0;
+	border-color: #ffffff;
+}
+
+a {
+	color: #da461a;
+}
+
+fieldset a.button.Icon {
+	padding: 0 0 0 25px !important;
+    margin: 0 10px !important;
+    color: #000000;
+    border: 0 !important;
+    background: url(epix_images/add.png) no-repeat left top;
+    min-height: 25px;
+}
+
+fieldset a.button.Icon:hover {
+	box-shadow: none !important;
+}
+
+[disabled] {
+	background-color: #f5f5f5 !important;
+}
+
+#divmain #operations #tb a.actions {
+	padding: 25px 0 0 0 !important;
+    margin: 0 10px;
+    color: #000000;
+    border: 0 !important;
+    background: url(epix_images/actions.png) no-repeat;
+    background-position: 53px top !important;
+}
+.s-box
+{
+    border:solid 2px #da461a;	
+	border-radius:10px;
+}
+.pic {
+  border: 10px solid #fff;  
+  float: left;
+  height: 160px;
+  width: 160px;
+  margin: 15px;
+  overflow: hidden;
+ 
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+/*MORPH*/
+.grow  {
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  text-align:center;
+}
+ 
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #FFC3B1; /*#FFD7CB*/
+  border: 10px solid #FFC3B1;
+  
+}
+
+    .grow a {
+        color: #da461a;
+        font-size: 13px !important;
+        font-weight: bold;
+    }
+
+.eventtitle{
+     background: #da461a;
+     background-image: url(../images/pattern.png);
+    border: 0;
+    /*color: white;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:100%;
+    height:40px;
+}
+
+.eventtitletext {
+	color: #ffffff;
+	width: 30%;
+	font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left:5px;
+}
+
+div.eventtitle ul li select{
+width:400px;
+border: 0;
+background-color: #f5f5f5;
+padding: 7px;
+color: #343434;
+font-family: "Montserrat", sans-serif;
+font-size: 13px;
+font-weight: normal;
+min-height: 50px;
+
+}
+
+.customersurveyheader{
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;
+    background-color: #da461a;
+    background-image: url(../images/pattern.png);
+    /*background-color: #e6e9ed*/
+}
+
+    .customersurveyheader li span {
+        color: #ffffff;
+        padding: 0 10px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+    }
+
+
+.breadcrumb-arrow {
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    list-style: none;   
+    background-color: #da461a;
+    background-image: url(../images/pattern.png);
+    /*background-color: #e6e9ed*/
+}
+.breadcrumb-arrow li:first-child a {
+    border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px
+}
+.breadcrumb-arrow li, .breadcrumb-arrow li a, .breadcrumb-arrow li span {
+    display: inline-block;
+    vertical-align: top
+}
+.breadcrumb-arrow li:not(:first-child) {
+    margin-left: -5px
+}
+.breadcrumb-arrow li+li:before {
+    padding: 0;
+    content: ""
+}
+.breadcrumb-arrow li span {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a, .breadcrumb-arrow li:not(:first-child) span {
+    height: 36px;
+    padding: 0 10px 0 25px;
+    line-height: 36px
+}
+.breadcrumb-arrow li:first-child a {
+    padding: 0 10px
+}
+.breadcrumb-arrow li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    background-color: #989898;
+    border: 1px solid #989898
+}
+.breadcrumb-arrow li:first-child a {
+    padding-left: 10px
+}
+.breadcrumb-arrow li a:after, .breadcrumb-arrow li a:before {
+    position: absolute;
+    top: -1px;
+    width: 0;
+    height: 0;
+    content: '';
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent
+}
+.breadcrumb-arrow li a:before {
+    right: -10px;
+    z-index: 3;
+    border-left-color: #989898;
+    border-left-style: solid;
+    border-left-width: 11px;  
+}
+.breadcrumb-arrow li a:after {
+    right: -11px;
+    z-index: 2;
+    border-left: 11px solid #e6e9ed; 
+}
+.breadcrumb-arrow li a:focus, .breadcrumb-arrow li a:hover {
+    background-color: #6f6f6f;
+    border: 1px solid #6f6f6f
+}
+.breadcrumb-arrow li a:focus:before, .breadcrumb-arrow li a:hover:before {
+    border-left-color: #6f6f6f
+}
+/*.breadcrumb-arrow li a:active {
+    background-color: #2494be;
+    border: 1px solid #2494be
+}
+.breadcrumb-arrow li a:active:after, .breadcrumb-arrow li a:active:before {
+    border-left-color: #2494be
+}*/
+.breadcrumb-arrow li span {
+   color: #ffffff;
+}
+
+.RadMenu .rmGroup .rmLink {
+    color: #0a0a0a;
+    font-size: 10px;
+    font-family: tahoma,arial,sans-serif;
+}
+
+.RadFilterMenu_CheckList ul.rmGroup .rmContent {
+    padding: 4px;
+}
+
+    .RadFilterMenu_CheckList ul.rmGroup .rmContent .RadListBox_Default {
+        color: #0a0a0a;
+        font-size: 10px;
+        font-family: tahoma,arial,sans-serif;       
+    }
+
+.RadGrid .rgRow, .RadGrid .rgAltRow, .RadGrid .rgEditRow, .RadGrid .rgFooter, .RadGrid .rgGroupHeader {
+    height:26px !important;    
+    max-height: 26px;
+}
+.RadGrid_Sunset {
+    font-size:11px;
+    /*color: #0a0a0a;*/   
+    font-family: tahoma,arial,sans-serif;
+}
+
+.RadButton_Default.rbButton.rbSelected, .RadButton_Default.rbButton.rbToggled, .RadButton_Default.rbSelected .rbHovered {
+    border-color: #676767 !important;
+    background-image:none !important;
+}
+
+.RadButton_Default.rbButton, .RadButton_Default.rbButton.rbDisabled, .RadButton_Default .rbSplitPart {
+    color: #333 !important;
+    background-image: none !important;
+}
+
+/*hide rad schedule agendaview 24 hours button*/
+.RadScheduler .rsFullTime
+{
+    visibility:hidden !important;
+}
+/*hide rad schedule agendaview time column*/
+/*.rsHorizontalHeaderTable th:nth-child(2),*/
+.rsAgendaRow td:first-of-type {
+    display: none;
+}
+/*rad schedule agendaview set last column width*/
+.rsAgendaRow td:last-child {
+    width: 550px !important;
+}
+
+/*.RadScheduler .rsAptContent {
+    padding: 4px 8px 4px;
+    position: static !important;
+    height: auto !important;
+    width: 120px;
+}*/
+.RadScheduler a.rsDateHeader:hover {
+    text-decoration:unset !important;
+    cursor: default !important;
+}
+
+.rsMonthView .rsWrap {
+    height: 100px !important;
+}
+.rsMonthView .rsApt {
+    height: 100px !important;
+}
+
+.RadScheduler .rsAgendaTable {
+    min-height: 200px !important;
+    overflow-x:hidden;
+}
+.RadGrid .rgCommandRow img, .RadGrid .rgCommandRow a, .RadGrid .rgHeader input {
+    vertical-align:middle;
+    color:white;
+}
