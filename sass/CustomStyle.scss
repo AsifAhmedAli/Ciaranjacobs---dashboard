@@ -29,7 +29,7 @@ $background-gradient-red: linear-gradient(
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center center;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     left: 24px;
   }
 }
@@ -290,7 +290,7 @@ $background-gradient-red: linear-gradient(
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 0 45px;
         @media screen and (max-width: 768px) {
           padding: 0;
@@ -485,7 +485,32 @@ $background-gradient-red: linear-gradient(
     #centre {
       width: 100% !important;
       #operations {
-        display: none;
+        .StartMenu {
+          #SearchMenu {
+            font-size: 12px !important;
+            font-family: "Rubik", sans-serif;
+            padding: 10px !important;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid transparent;
+            min-width: 320px;
+            background-color: white !important;
+            box-shadow: 0 3px 8px rgba($color: #000000, $alpha: 0.1);
+          }
+          .backlink {
+            img#BackLink{
+              min-width: 30px !important;
+              min-height: 30px !important;
+              max-width: 30px !important;
+              max-height: 30px !important;
+              padding: 0;
+              background-image: none;
+              margin-top: 5px  !important;
+              border-radius: 50%;
+              box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+            }
+          }
+        }
       }
     }
     .container-box-div-dashboard {
@@ -669,7 +694,7 @@ $background-gradient-red: linear-gradient(
           align-items: center;
           justify-content: center;
           content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.7609 20.3973V14.6739C25.7604 9.63287 22.2904 5.41453 17.6116 4.2457C17.8115 3.84938 17.9348 3.40816 17.9348 2.93479C17.9348 1.31648 16.6183 0 15 0C13.3817 0 12.0652 1.31648 12.0652 2.93479C12.0652 3.40822 12.1885 3.84932 12.3884 4.2457C7.70965 5.41453 4.23961 9.63287 4.23908 14.6739V20.3973C3.10178 20.8017 2.28299 21.8758 2.28258 23.1522C2.28316 24.7734 3.59619 26.0863 5.21736 26.0869H10.2071C10.6604 28.3196 12.6332 29.9995 15 30C17.3667 29.9995 19.3395 28.3196 19.7929 26.0869H24.7826C26.4038 26.0863 27.7168 24.7734 27.7174 23.1522C27.717 21.8758 26.8982 20.8017 25.7609 20.3973ZM15 1.9565C15.5388 1.9565 15.9783 2.39596 15.9783 2.93479C15.9783 3.47361 15.5388 3.91307 15 3.91307C14.4612 3.91307 14.0217 3.47361 14.0217 2.93479C14.0217 2.39596 14.4612 1.9565 15 1.9565ZM10.1087 14.6739C10.1087 15.2142 9.67073 15.6522 9.13043 15.6522C8.59014 15.6522 8.15215 15.2142 8.15215 14.6739C8.15397 10.8951 11.2212 7.82777 15 7.82607C15.5402 7.82607 15.9783 8.26395 15.9783 8.80436C15.9783 9.34459 15.5403 9.78264 15 9.78264V9.78252C12.3055 9.78738 10.1136 11.9793 10.1087 14.6739ZM15 28.0436C13.7244 28.0412 12.6513 27.2232 12.2462 26.0869H17.7539C17.3487 27.2232 16.2756 28.0412 15 28.0436Z' fill='white'/%3E%3C/svg%3E%0A");
-          @media screen and (max-width: 530px){
+          @media screen and (max-width: 530px) {
             top: -8px;
             min-width: 24px;
             min-height: 24px;

@@ -607,20 +607,20 @@
 
           <div id="PageHeader">
             <div class="centre">
-              <a href="" class="back-button" id="menu_bars">
+              <!-- <a href="" class="back-button" id="menu_bars">
                 <img
                   alt="Menu Bars"
                   src="../../images/menu.png"
                   style="height: 24px; width: 24px; border-width: 0px"
                 />
-              </a>
+              </a> -->
               <!-- Custom Search Bar START -->
-              <div class="search-container">
+              <!-- <div class="search-container">
                 <input type="text" placeholder="Search" class="search-nav" />
                 <button>
                   <img src="./images/icons/search-icon.svg" alt="" />
                 </button>
-              </div>
+              </div> -->
               <!-- Custom Search Bar END -->
               <div class="side">
                 <div id="ctl00_IDStrip" class="user">
@@ -706,7 +706,7 @@
                       </ul></span
                     ><img
                       id="BackLink"
-                      src="/DashboardTest/Images/back24.png"
+                      src="./images/icons/back24.png"
                       title="Back"
                       alt="Back"
                       onclick="javascript:__doPostBack('ctl00$HistoryM_1','')"
@@ -808,7 +808,10 @@
                             class="data-background-outside-dashboard white plain no-icon red-gradient notification"
                           >
                             <div class="icon">
-                              <img src="./images/icons/css_completion.png" alt="">
+                              <img
+                                src="./images/icons/css_completion.png"
+                                alt=""
+                              />
                             </div>
                             <div class="text">
                               <h5 class="value">66%</h5>
@@ -1441,6 +1444,28 @@
       //]]>
     </script>
 
-    <script src="./CustomScript.js"></script>
+    <!-- <script src="./CustomScript.js"></script> -->
+
+    <script>
+      var menu_bars = document.getElementById("my_menu");
+      var sidebar = document.getElementById("left");
+      var body_content = document.getElementById("right");
+
+      var humburger = document.getElementsByClassName("humburger")[0];
+
+      menu_bars.onclick = function () {
+        sidebar.classList.toggle("collapsed");
+        body_content.classList.toggle("expanded");
+      };
+
+      if (window.screen.width < 1200) {
+        humburger.onclick = function () {
+          sidebar.classList.toggle("d-block");
+        };
+        // document.getElementById('menu_bars_close').onclick = function(){
+        //     sidebar.classList.toggle("d-block")
+        // }
+      }
+    </script>
   </body>
 </html>
