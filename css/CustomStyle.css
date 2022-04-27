@@ -54,12 +54,13 @@
 }
 #inner-page #left .navigation {
   height: 100%;
-  overflow-y: auto;
+  overflow: visible;
 }
 #inner-page #left .navigation #mainNav > ul li {
   position: relative;
   padding-left: 20px;
   background: none;
+  transition: all 0.2s ease-in-out;
 }
 #inner-page #left .navigation #mainNav > ul li a {
   font-size: 16px !important;
@@ -72,6 +73,8 @@
   line-height: 1.5;
   display: flex;
   align-items: center;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
 }
 #inner-page #left .navigation #mainNav > ul li a .icon {
   position: absolute;
@@ -94,6 +97,10 @@
 }
 #inner-page #left .navigation #mainNav > ul li a .icon svg path {
   fill: #eb681d;
+}
+#inner-page #left .navigation #mainNav > ul li:hover > a {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 #inner-page #left .navigation #mainNav > ul li.active > a {
   background-color: white;
@@ -149,12 +156,32 @@
   }
 }
 #inner-page #left .navigation #mainNav > ul li ul.level2 {
-  position: relative;
-  right: 0;
   width: 100%;
+  box-shadow: 0 10px 43px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  right: -225px !important;
+  border-left: none !important;
+  background-color: white;
+  overflow: hidden;
 }
 #inner-page #left .navigation #mainNav > ul li ul.level2 li {
   padding-left: 0;
+}
+#inner-page #left .navigation #mainNav > ul li ul.level2 li:hover {
+  background-color: white;
+}
+#inner-page #left .navigation #mainNav > ul li ul.level2 li:hover a {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #eb681d;
+}
+@media screen and (max-width: 1200px) {
+  #inner-page #left .navigation #mainNav > ul li ul.level2 {
+    right: 0 !important;
+    background-color: transparent;
+    padding-left: 0.5rem;
+    border-radius: 0;
+    border-left: 3px solid white !important;
+  }
 }
 @media screen and (min-width: 1201px) {
   #inner-page #left.collapsed {

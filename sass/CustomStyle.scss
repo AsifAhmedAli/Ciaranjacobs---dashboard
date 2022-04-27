@@ -65,13 +65,14 @@ $background-gradient-red: linear-gradient(
     }
     .navigation {
       height: 100%;
-      overflow-y: auto;
+      overflow: visible;
       #mainNav {
         > ul {
           li {
             position: relative;
             padding-left: 20px;
             background: none;
+            transition: all 0.2s ease-in-out;
             a {
               font-size: 16px !important;
               font-weight: 500;
@@ -83,6 +84,8 @@ $background-gradient-red: linear-gradient(
               line-height: 1.5;
               display: flex;
               align-items: center;
+              border-radius: 50px;
+              transition: all 0.2s ease-in-out;
 
               .icon {
                 position: absolute;
@@ -105,6 +108,12 @@ $background-gradient-red: linear-gradient(
                     fill: #eb681d;
                   }
                 }
+              }
+            }
+            &:hover{
+              > a{
+                background-color: rgba($color: #000000, $alpha: .1);
+                color: white;
               }
             }
             &.active {
@@ -164,11 +173,32 @@ $background-gradient-red: linear-gradient(
             }
             ul {
               &.level2 {
-                position: relative;
-                right: 0;
+                // position: relative;
+                // right: 0;
                 width: 100%;
+                box-shadow: 0 10px 43px rgba($color: #000000, $alpha: .2);
+                border-radius: 28px;
+                right: -225px !important;
+                border-left: none !important;
+                background-color: white;
+                overflow: hidden;
                 li {
                   padding-left: 0;
+                  &:hover{
+                    background-color: white;
+                    a{
+                      
+                    background-color: rgba($color: #000000, $alpha: .05);
+                    color: #eb681d;
+                    }
+                  }
+                }
+                @media screen and (max-width: 1200px) {
+                  right: 0 !important;
+                  background-color: transparent;
+                  padding-left: .5rem;
+                  border-radius: 0;
+                  border-left: 3px solid white !important;
                 }
               }
             }
@@ -498,14 +528,14 @@ $background-gradient-red: linear-gradient(
             box-shadow: 0 3px 8px rgba($color: #000000, $alpha: 0.1);
           }
           .backlink {
-            img#BackLink{
+            img#BackLink {
               min-width: 30px !important;
               min-height: 30px !important;
               max-width: 30px !important;
               max-height: 30px !important;
               padding: 0;
               background-image: none;
-              margin-top: 5px  !important;
+              margin-top: 5px !important;
               border-radius: 50%;
               box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
             }
