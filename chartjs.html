@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/CustomStyle.css" />
+  </head>
+  <body>
+    <div style="width: 600px !important; height: 300px !important;">
+      <canvas id="myChart" width="600" height="300"></canvas>
+    </div>
+
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      // Gradient Colors
+      var blue_gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      blue_gradient.addColorStop(0, "#4472C4");
+      blue_gradient.addColorStop(1, "#ffffff");
+      var orange_gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      orange_gradient.addColorStop(0, "#ED7D31");
+      orange_gradient.addColorStop(1, "#ffffff");
+      var area_gradient = ctx.createLinearGradient(0, 0, 0, 400);
+      area_gradient.addColorStop(0, "#cfe0ff");
+      area_gradient.addColorStop(1, "#ffffff");
+
+      // Chart Creation
+      const myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["A", "M", "J", "J", "A", "S", "O", "N", "D", "J", "F"],
+          datasets: [
+            {
+              label: "Tasks",
+              data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 62, 21],
+              backgroundColor: blue_gradient,
+              borderRadius: 50,
+              padding: 10,
+              padding: 20,
+            },
+            {
+              label: "SLA %",
+              data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 51, 57],
+              backgroundColor: orange_gradient,
+              borderRadius: 50,
+              padding: 20,
+            },
+            {
+              type: "line",
+              label: "Linear (Tasks)",
+              data: [
+                7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54,
+                7.54,
+              ],
+              backgroundColor: ["#4472C4"],
+              borderColor: ["#4472C4"],
+              borderWidth: 2,
+              borderDash: [10, 5],
+              fill: {
+                target: 'origin',
+                above: area_gradient,
+              },
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+          plugins: {
+            legend: {
+              labels: {
+                // This more specific font property overrides the global property
+                font: {
+                  size: 14,
+                  family: "'Poppins'",
+                },
+              },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

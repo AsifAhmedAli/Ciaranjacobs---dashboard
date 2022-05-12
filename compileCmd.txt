@@ -1,0 +1,1 @@
+sass --watch sass/CustomStyle.scss:css/CustomStyle.css
