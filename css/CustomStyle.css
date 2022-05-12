@@ -54,7 +54,7 @@
 }
 #inner-page #left .navigation {
   height: 100%;
-  overflow: visible;
+  overflow: visible !important;
 }
 #inner-page #left .navigation #mainNav > ul li {
   position: relative;
@@ -226,9 +226,14 @@
   }
 }
 #inner-page #right {
-  padding-left: 224px !important;
+  padding-left: 0 !important;
+  margin-left: auto;
+  width: calc(100% - 224px) !important;
   overflow: hidden;
   transition: all 0.1s ease-in-out;
+}
+#inner-page #right * {
+  font-family: "Poppins", sans-serif !important;
 }
 #inner-page #right .logo {
   background-color: #eb681d;
@@ -873,6 +878,58 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+}
+
+#chart_table {
+  width: 100%;
+}
+#chart_table #chart_table_left,
+#chart_table #chart_table_right {
+  width: 100%;
+}
+#chart_table #chart_table_left tbody > tr > td,
+#chart_table #chart_table_right tbody > tr > td {
+  vertical-align: middle;
+  text-align: center !important;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  padding: 0.25rem 0.325rem;
+}
+#chart_table #chart_table_left tbody > tr:first-child > td:first-child,
+#chart_table #chart_table_right tbody > tr:first-child > td:first-child {
+  padding: 1rem 0;
+  background-color: white;
+  color: black !important;
+  border-color: transparent;
+}
+#chart_table #chart_table_left tbody > tr:nth-child(2) td,
+#chart_table #chart_table_right tbody > tr:nth-child(2) td {
+  background-color: #4472c4;
+  color: white !important;
+  font-weight: 400 !important;
+}
+#chart_table #chart_table_left tbody > tr:nth-child(2) td b,
+#chart_table #chart_table_right tbody > tr:nth-child(2) td b {
+  font-weight: 400 !important;
+}
+#chart_table #chart_table_left tbody > tr:nth-child(2) td:first-child,
+#chart_table #chart_table_right tbody > tr:nth-child(2) td:first-child {
+  border-top-left-radius: 8px;
+}
+#chart_table #chart_table_left tbody > tr:nth-child(2) td:last-child,
+#chart_table #chart_table_right tbody > tr:nth-child(2) td:last-child {
+  border-top-right-radius: 8px;
+}
+#chart_table #chart_table_left tbody > tr:last-child td:first-child,
+#chart_table #chart_table_right tbody > tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+#chart_table #chart_table_left tbody > tr:last-child td:last-child,
+#chart_table #chart_table_right tbody > tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+#chart_table tbody > tr:nth-child(3) > td:nth-child(2) {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=CustomStyle.css.map */

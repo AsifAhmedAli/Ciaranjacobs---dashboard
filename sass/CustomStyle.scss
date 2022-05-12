@@ -65,7 +65,7 @@ $background-gradient-red: linear-gradient(
     }
     .navigation {
       height: 100%;
-      overflow: visible;
+      overflow: visible !important;
       #mainNav {
         > ul {
           li {
@@ -110,9 +110,9 @@ $background-gradient-red: linear-gradient(
                 }
               }
             }
-            &:hover{
-              > a{
-                background-color: rgba($color: #000000, $alpha: .1);
+            &:hover {
+              > a {
+                background-color: rgba($color: #000000, $alpha: 0.1);
                 color: white;
               }
             }
@@ -176,7 +176,7 @@ $background-gradient-red: linear-gradient(
                 // position: relative;
                 // right: 0;
                 width: 100%;
-                box-shadow: 0 10px 43px rgba($color: #000000, $alpha: .2);
+                box-shadow: 0 10px 43px rgba($color: #000000, $alpha: 0.2);
                 border-radius: 28px;
                 right: -225px !important;
                 border-left: none !important;
@@ -184,19 +184,18 @@ $background-gradient-red: linear-gradient(
                 overflow: hidden;
                 li {
                   padding-left: 0;
-                  &:hover{
+                  &:hover {
                     background-color: white;
-                    a{
-                      
-                    background-color: rgba($color: #000000, $alpha: .05);
-                    color: #eb681d;
+                    a {
+                      background-color: rgba($color: #000000, $alpha: 0.05);
+                      color: #eb681d;
                     }
                   }
                 }
                 @media screen and (max-width: 1200px) {
                   right: 0 !important;
                   background-color: transparent;
-                  padding-left: .5rem;
+                  padding-left: 0.5rem;
                   border-radius: 0;
                   border-left: 3px solid white !important;
                 }
@@ -257,7 +256,13 @@ $background-gradient-red: linear-gradient(
   }
 
   #right {
-    padding-left: 224px !important;
+    * {
+      font-family: "Poppins", sans-serif !important;
+    }
+    // padding-left: 224px !important;
+    padding-left: 0 !important;
+    margin-left: auto;
+    width: calc(100% - 224px) !important;
     overflow: hidden;
     transition: all 0.1s ease-in-out;
     .logo {
@@ -973,5 +978,74 @@ $background-gradient-red: linear-gradient(
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z'/%3E%3Cpath fill-rule='evenodd' d='M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center center;
+  }
+}
+
+// Second Page CSS
+
+#chart_table {
+  width: 100%;
+  #chart_table_left,
+  #chart_table_right {
+    width: 100%;
+    tbody {
+      > tr {
+        > td {
+          vertical-align: middle;
+          text-align: center !important;
+          border: 1px solid #d9d9d9;
+          background-color: white;
+          padding: .25rem .325rem;
+        }
+        &:first-child {
+          > td {
+            &:first-child {
+              padding: 1rem 0;
+              background-color: white;
+              color: black !important;
+              border-color: transparent;
+            }
+          }
+        }
+        &:nth-child(2) {
+          td {
+            background-color: #4472c4;
+            color: white !important;
+            font-weight: 400 !important;
+            b {
+              font-weight: 400 !important;
+            }
+            &:first-child {
+              border-top-left-radius: 8px;
+            }
+            &:last-child {
+              border-top-right-radius: 8px;
+            }
+          }
+        }
+        &:last-child{
+          td{
+            &:first-child {
+              border-bottom-left-radius: 8px;
+            }
+            &:last-child {
+              border-bottom-right-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  tbody {
+    > tr {
+      &:nth-child(3) {
+        > td {
+          &:nth-child(2) {
+            padding: 1rem;
+          }
+        }
+      }
+    }
   }
 }
