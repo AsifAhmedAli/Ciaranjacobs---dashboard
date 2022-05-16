@@ -1049,3 +1049,18 @@ $background-gradient-red: linear-gradient(
     }
   }
 }
+
+#chartjs-tooltip{
+  position: relative;
+  &.tooltip-dropdown{
+    &::after{
+      color: white;
+      position: absolute;
+      bottom: -35%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: ' ▾';
+      font-size: 30px;
+    }
+  }
+}

@@ -52,6 +52,9 @@
             {
               type: "line",
               label: "Linear (Tasks)",
+              pointBorderColor: '#78a8ff',
+              pointBackgroundColor: 'rgb(255,255,255)',
+              pointBoxShadow: '0 3px 6px #000',
               data: [
                 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54, 7.54,
                 7.54,
@@ -131,11 +134,13 @@
                 if (!tooltipEl) {
                   tooltipEl = document.createElement("div");
                   tooltipEl.id = "chartjs-tooltip";
+                  tooltipEl.classList.add('tooltip-dropdown');
                   tooltipEl.setAttribute(
                     "style",
-                    "box-shadow: 0 3px 6px rgba(0,0,0,.15); min-width: 63px; background-color: white; border-radius: 6px;font-family: 'Poppins'; padding: .15rem 1rem;"
+                    "box-shadow: 0 10px 30px rgba(0,0,0,.3); min-width: 63px; background-color: white; border-radius: 8px;font-family: 'Poppins'; padding: .15rem 1rem;"
                   );
                   tooltipEl.innerHTML = '<table style="width: 100%;"></table>';
+                  tooltipEl.style.transform = 'translate(-50%, -90%)';
                   document.body.appendChild(tooltipEl);
                 }
 
